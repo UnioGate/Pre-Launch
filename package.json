@@ -1,0 +1,8 @@
+{
+  "name": "uniogate-prelaunch",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "mongodb": "^6.16.0"
+  }
+}
