@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | UnioGate Infrastructure</title>
+<link rel="icon" href="LogoMark%20Blue.svg" type="image/svg+xml"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Sora:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ffb4ab",
+              "on-secondary-fixed-variant": "#005045",
+              "secondary-container": "#00a993",
+              "tertiary-fixed-dim": "#c9bfff",
+              "surface-dim": "#0b1325",
+              "surface-container-lowest": "#060e1f",
+              "on-error-container": "#ffdad6",
+              "surface-tint": "#b5c4ff",
+              "secondary": "#59dbc4",
+              "on-secondary-fixed": "#00201b",
+              "primary": "#b5c4ff",
+              "on-primary-container": "#96acfc",
+              "outline-variant": "#444651",
+              "tertiary-fixed": "#e5deff",
+              "inverse-primary": "#435aa4",
+              "secondary-fixed-dim": "#59dbc4",
+              "on-surface": "#dbe2fb",
+              "surface-container-high": "#222a3d",
+              "on-tertiary-fixed": "#1a0063",
+              "on-tertiary-fixed-variant": "#4403d8",
+              "on-tertiary": "#2e009c",
+              "on-primary-fixed-variant": "#2a428a",
+              "on-primary-fixed": "#00164d",
+              "surface-container-low": "#131b2d",
+              "on-surface-variant": "#c5c6d2",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              "outline": "#8f909c",
+              "on-secondary-container": "#00352e",
+              "background": "#0b1325",
+              "primary-container": "#253e86",
+              "primary-fixed-dim": "#b5c4ff",
+              "surface-bright": "#31394c",
+              "on-primary": "#0c2a73",
+              "inverse-on-surface": "#283043",
+              "secondary-fixed": "#78f8df",
+              "primary-fixed": "#dce1ff",
+              "on-tertiary-container": "#b1a4ff",
+              "on-secondary": "#00382f",
+              "on-background": "#dbe2fb",
+              "inverse-surface": "#dbe2fb",
+              "tertiary-container": "#4000ce",
+              "surface-variant": "#2d3448",
+              "surface-container-highest": "#2d3448",
+              "surface-container": "#171f32",
+              "tertiary": "#c9bfff",
+              "surface": "#0b1325"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Sora"],
+              "label": ["Sora"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #b5c4ff 0%, #253e86 100%);
+        }
+        .glass-panel {
+            background: rgba(45, 52, 72, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        body {
+            background-color: #0b1325;
+            color: #dbe2fb;
+            font-family: 'Sora', sans-serif;
+        }
+    </style>
+</head>
+<body class="selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar Implementation -->
+<nav class="fixed top-0 w-full z-50 bg-[#0B1325]/60 backdrop-blur-xl">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<a href="index.html" class="flex items-center gap-2 text-xl font-bold tracking-tighter text-[#B5C4FF] font-headline"><img alt="" src="LogoMark%20Blue.svg" width="36" height="36" class="h-9 w-9 shrink-0"/><span>UnioGate</span></a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Plus_Jakarta_Sans'] text-sm font-semibold tracking-wide text-slate-400 hover:text-white transition-colors" href="index.html">Platform</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm font-semibold tracking-wide text-slate-400 hover:text-white transition-colors" href="how-it-works.html">Infrastructure</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm font-semibold tracking-wide text-slate-400 hover:text-white transition-colors" href="connect.html">Developers</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm font-semibold tracking-wide text-[#B5C4FF] font-bold border-b-2 border-[#B5C4FF] pb-1" href="about.html">Company</a>
+</div>
+<button type="button" data-waitlist-open class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl font-headline font-bold text-sm hover:scale-[1.02] active:scale-95 transition-all">
+                Join Waitlist
+            </button>
+</div>
+<div class="bg-gradient-to-b from-[#131B2D] to-transparent h-[1px] w-full absolute bottom-0"></div>
+</nav>
+<main>
+<!-- Hero Section: Editorial Asymmetry -->
+<section class="relative pt-40 pb-20 px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-8">
+<span class="text-secondary font-headline font-bold tracking-widest text-xs uppercase mb-6 block">OUR ORIGIN STORY</span>
+<h1 class="text-[3.5rem] lg:text-[5rem] font-headline font-bold leading-[1.1] tracking-tighter text-on-surface">
+                        Re-engineering the <span class="text-primary italic">Pulse</span> of African Finance.
+                    </h1>
+</div>
+<div class="lg:col-span-4 pb-4">
+<p class="text-lg text-on-surface-variant leading-relaxed font-body">
+                        The journey started with a simple question: Why is moving money across Nigeria still harder than moving data? We're building the infrastructure that makes them one and the same.
+                    </p>
+</div>
+</div>
+<!-- Background Accent -->
+<div class="absolute -top-20 -right-20 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] -z-10"></div>
+</section>
+<!-- Mission Statement: The Kinetic Vault Texture -->
+<section class="py-32 px-6 bg-surface-container-low">
+<div class="max-w-5xl mx-auto text-center">
+<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-surface-container-high mb-8">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="rocket_launch">rocket_launch</span>
+</div>
+<h2 class="font-headline text-3xl md:text-5xl font-bold mb-10 tracking-tight">Our mission is to synchronize the Nigerian economy by creating a unified, real-time payment layer that empowers every developer, business, and citizen.</h2>
+<div class="h-1 w-24 bg-secondary mx-auto rounded-full"></div>
+</div>
+</section>
+<!-- Values: Bento Grid -->
+<section class="py-32 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Value Card -->
+<div class="md:col-span-2 glass-panel p-12 rounded-xl flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="text-tertiary font-headline font-bold text-sm tracking-widest uppercase block mb-4">Value 01</span>
+<h3 class="text-4xl font-headline font-bold mb-6">Excellence by Design</h3>
+</div>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-xl">
+                        We don't just build features; we architect systems. Every line of code and every API endpoint is a testament to our commitment to industrial-grade precision and reliability.
+                    </p>
+</div>
+<!-- Small Value Card -->
+<div class="bg-surface-container p-8 rounded-xl flex flex-col justify-between border-b-4 border-secondary">
+<div>
+<span class="text-secondary font-headline font-bold text-sm tracking-widest uppercase block mb-4">Value 02</span>
+<h3 class="text-2xl font-headline font-bold mb-4">Radical Transparency</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            No black boxes. We believe that trust in financial infrastructure is earned through visibility and open dialogue.
+                        </p>
+</div>
+<div class="mt-8 flex justify-end">
+<span class="material-symbols-outlined text-secondary text-5xl" data-icon="visibility">visibility</span>
+</div>
+</div>
+<!-- Interactive Value Card -->
+<div class="bg-surface-container-high p-8 rounded-xl flex flex-col border-b-4 border-primary">
+<span class="text-primary font-headline font-bold text-sm tracking-widest uppercase block mb-4">Value 03</span>
+<h3 class="text-2xl font-headline font-bold mb-4">Velocity with Purpose</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Innovation at the speed of the market, tempered by the responsibility of a central utility.
+                    </p>
+</div>
+<div class="md:col-span-2 relative overflow-hidden rounded-xl h-[240px]">
+<img alt="Cybersecurity and infrastructure" class="w-full h-full object-cover grayscale opacity-40" data-alt="Abstract glowing network of digital connection lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhfUeBgZC1ue8OTSUGr5tqHD5vhiLzPYXyt8r7mCSXwYzF9z2sc4To2qXS33felb5D6QP8x0hvIq6TywN4U_Gg5zY6FP-Yiz98Sg2O_SrAErd2UoS08uWxhmDVB_CWCZOusbwBbM9BR63rr2hDdvA21xKnYYrtIIzi4hL-NtC1RzktHm9ZutQ_9fXeEOfrSAQmj9UDgLbUUsT3I9wmnF6lW_5gFAsUBzOIaFP5XTzz7r1QsUYBuyquda7ygKukCL0yMkoMjo6WYBc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim to-transparent flex items-end p-8">
+<p class="font-headline font-bold text-xl">The Foundation of Future Finance.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-32 px-6 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20">
+<h2 class="text-4xl font-headline font-bold mb-4">The Architects</h2>
+<p class="text-on-surface-variant text-lg">A collective of engineers, designers, and economists focused on one problem.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16">
+<!-- Team Member 1 -->
+<div class="group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden mb-6 bg-surface-container relative">
+<img alt="Founder" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional portrait of a male technology executive" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC29lYIG31zQgLy7QWxVI8o3tKA53v_oLBTR7_IWwk1TCZ-Rpp-J7u5nEIEel-tMTuhh25vHQZie85DzEVXy7d13LxjareKMtNcZQ1sysABff6hHQSuiBbSx18SdXoA3oYs5j9kMU4Oa5DICVajoBF7Fsoau1tiOC8yR11TvdJhKSPot8v4gI0fjB9syJEgdYAkEPXPRdT8jgjRl-ozicll9JjKaLTrbpFRt1SZ_X-pbBq-RvR46O1moZtrdSyDgOVxbzgQiC-ZxMk"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="font-headline font-bold text-xl">Tunde Adebayo</h4>
+<p class="text-secondary text-sm font-label uppercase tracking-widest">Co-Founder &amp; CEO</p>
+</div>
+<!-- Team Member 2 -->
+<div class="group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden mb-6 bg-surface-container relative">
+<img alt="CTO" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional portrait of a female software engineer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdVwSUTWgA-u_8nD1CGtRfI-CkAYK9Zzx0J--uJFCI1aPbhCKaNYI5cHjAHFFnptbVrgxrvC0pl35_QIsrZpVNA4FJvSVhOCZSZ98sKJqwGKFdFMe1R69Lyep-brckj1GC6ys-UDwjiow1UakjF91EtUkSF5Kqz5Nu2D1YrrabHWYePX2r0hxqBWKwOQno5Uyvp_F7oXZw8UIs74C4uMHUbddpW7Qt49g-rrUHHv0ToK6xvHN5slvPE1ngS2c-y4-F33kYW6L0D4s"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="font-headline font-bold text-xl">Amara Okafor</h4>
+<p class="text-secondary text-sm font-label uppercase tracking-widest">Chief Technical Officer</p>
+</div>
+<!-- Team Member 3 -->
+<div class="group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden mb-6 bg-surface-container relative">
+<img alt="Product Lead" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional portrait of a male product manager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkyyls_fRBuLCWWb225i7GDlAn3f2CIKfz0Pc7YATnWzht0DIewix4lRvh7Me75uKMMSqAsuz52FmV9Yv-FbN9qbQVlWOz5PM1ME88a7avZZ4HkFlD-PvII6rkhDHqDXFDc5Celg5gcutWtlyoOo3BF9eM6LxqNIZPYGQ9Hk5e4w_MCnosLSzhPawHDZPH7cN7EhHua-DHsMTVvVuhEVe_T7EVxQkuSaJfJqgMxBeYdYKyDSWstNQCSwwaylhWrtCzMIhqpF9XYyw"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="font-headline font-bold text-xl">Chidi Benson</h4>
+<p class="text-secondary text-sm font-label uppercase tracking-widest">Head of Product</p>
+</div>
+<!-- Team Member 4 -->
+<div class="group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden mb-6 bg-surface-container relative">
+<img alt="Operations" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional portrait of a female operations leader" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm3g_1-89XnKYZS_igd2cMbrqrk15f0nt7Y5uJTxgbpwQfUdTGmV9lBrqgGJchYbbwPiVJPcYFKAXG9B2_noSgqsrlgiQKg2MnB8PysA1vH6O0QKzQ8rOV71aYzdrkUdBmWinSX3KM0BPOpNOsaU7-CoAc6TVukd8AIPFa7kez2BZJ6zueXoyBQy4pnClCyeF1_re_XvmxiO-ACKfK55UBoKxCGTufnlVFgtcnZ9YCy21D_jjKVKR6bpr3SNYeXpRMezkCj855qTI"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="font-headline font-bold text-xl">Sarah Lawson</h4>
+<p class="text-secondary text-sm font-label uppercase tracking-widest">Director of Operations</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-6">
+<div class="max-w-4xl mx-auto glass-panel p-16 rounded-xl text-center relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-headline font-bold mb-8 tracking-tighter">Ready to build the future?</h2>
+<p class="text-on-surface-variant text-lg mb-10 max-w-2xl mx-auto">We're always looking for brilliant minds who are bored with the status quo. Join us in rewriting the rules of commerce.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button type="button" data-waitlist-open class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-4 rounded-xl font-headline font-bold text-lg shadow-[0_8px_32px_rgba(37,62,134,0.3)]">Join the Waitlist</button>
+<a class="bg-surface-container-highest border border-primary/20 text-on-surface px-10 py-4 rounded-xl font-headline font-bold text-lg inline-flex items-center justify-center" href="careers.html">View Openings</a>
+</div>
+</div>
+<!-- Decorative background glow -->
+<div class="absolute -bottom-20 -left-20 w-[300px] h-[300px] bg-secondary/10 rounded-full blur-[80px]"></div>
+<div class="absolute -top-20 -right-20 w-[300px] h-[300px] bg-tertiary/10 rounded-full blur-[80px]"></div>
+</div>
+</section>
+</main>
+<!-- Footer Implementation -->
+<footer class="w-full pt-20 pb-10 border-t border-white/5 bg-[#0B1325]">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="col-span-2 md:col-span-1">
+<a href="index.html" class="inline-flex items-center gap-2 text-2xl font-black text-[#B5C4FF] mb-6 font-headline"><img alt="" src="LogoMark%20Blue.svg" width="32" height="32" class="h-8 w-8 shrink-0"/><span>UnioGate</span></a>
+<p class="text-slate-400 text-sm max-w-xs leading-relaxed">
+                    Building the financial layer for Nigeria's next generation of digital giants.
+                </p>
+</div>
+<div>
+<h5 class="text-[#B5C4FF] font-bold mb-6 font-label">Product</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="how-it-works.html">Infrastructure</a></li>
+<li><a class="text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="#">Payments</a></li>
+<li><a class="text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="#">Developer Tools</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#B5C4FF] font-bold mb-6 font-label">Company</h5>
+<ul class="space-y-4">
+<li><a class="text-[#59DBC4] transition-all hover:translate-x-1 inline-block" href="about.html">About Us</a></li>
+<li><a class="text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="careers.html">Careers</a></li>
+<li><a class="text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="press.html">Press</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#B5C4FF] font-bold mb-6 font-label">Social</h5>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-slate-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-slate-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-['Sora'] text-sm text-slate-400">© 2026 UnioGate Infrastructure. All rights reserved.</p>
+<div class="flex flex-wrap gap-6">
+<a class="text-xs text-slate-500 hover:text-white" href="privacy-policy.html">Privacy Policy</a>
+<a class="text-xs text-slate-500 hover:text-white" href="terms-of-service.html">Terms of Service</a>
+<a class="text-xs text-slate-500 hover:text-white" href="security.html">Security</a>
+<a class="text-xs text-slate-500 hover:text-white" href="cookie-settings.html">Cookies</a>
+</div>
+</div>
+</footer>
+<script src="assets/waitlist-modal.js" defer></script>
+<script src="assets/cookie-consent.js" defer></script>
+<script src="assets/footer-links.js" defer></script>
+</body></html>
+

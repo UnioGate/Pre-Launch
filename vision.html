@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vision | UnioGate</title>
+<link rel="icon" href="LogoMark%20Blue.svg" type="image/svg+xml"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Sora:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ffb4ab",
+              "on-secondary-fixed-variant": "#005045",
+              "secondary-container": "#00a993",
+              "tertiary-fixed-dim": "#c9bfff",
+              "surface-dim": "#0b1325",
+              "surface-container-lowest": "#060e1f",
+              "on-error-container": "#ffdad6",
+              "surface-tint": "#b5c4ff",
+              "secondary": "#59dbc4",
+              "on-secondary-fixed": "#00201b",
+              "primary": "#b5c4ff",
+              "on-primary-container": "#96acfc",
+              "outline-variant": "#444651",
+              "tertiary-fixed": "#e5deff",
+              "inverse-primary": "#435aa4",
+              "secondary-fixed-dim": "#59dbc4",
+              "on-surface": "#dbe2fb",
+              "surface-container-high": "#222a3d",
+              "on-tertiary-fixed": "#1a0063",
+              "on-tertiary-fixed-variant": "#4403d8",
+              "on-tertiary": "#2e009c",
+              "on-primary-fixed-variant": "#2a428a",
+              "on-primary-fixed": "#00164d",
+              "surface-container-low": "#131b2d",
+              "on-surface-variant": "#c5c6d2",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              "outline": "#8f909c",
+              "on-secondary-container": "#00352e",
+              "background": "#0b1325",
+              "primary-container": "#253e86",
+              "primary-fixed-dim": "#b5c4ff",
+              "surface-bright": "#31394c",
+              "on-primary": "#0c2a73",
+              "inverse-on-surface": "#283043",
+              "secondary-fixed": "#78f8df",
+              "primary-fixed": "#dce1ff",
+              "on-tertiary-container": "#b1a4ff",
+              "on-secondary": "#00382f",
+              "on-background": "#dbe2fb",
+              "inverse-surface": "#dbe2fb",
+              "tertiary-container": "#4000ce",
+              "surface-variant": "#2d3448",
+              "surface-container-highest": "#2d3448",
+              "surface-container": "#171f32",
+              "tertiary": "#c9bfff",
+              "surface": "#0b1325"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Sora"],
+              "label": ["Sora"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(45, 52, 72, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .text-gradient-primary {
+            background: linear-gradient(135deg, #b5c4ff 0%, #59dbc4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .kinetic-glow {
+            box-shadow: 0 8px 32px rgba(37, 62, 134, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0B1325]/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(37,62,134,0.08)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<a href="index.html" class="flex items-center gap-2 text-xl font-bold tracking-tighter text-[#B5C4FF] font-headline"><img alt="" src="LogoMark%20Blue.svg" width="36" height="36" class="h-9 w-9 shrink-0"/><span>UnioGate</span></a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Plus_Jakarta_Sans'] text-sm font-semibold tracking-wide text-slate-400 hover:text-white transition-colors" href="index.html">Platform</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm font-semibold tracking-wide text-slate-400 hover:text-white transition-colors" href="how-it-works.html">Infrastructure</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm font-semibold tracking-wide text-slate-400 hover:text-white transition-colors" href="connect.html">Developers</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm font-semibold tracking-wide text-slate-400 hover:text-white transition-colors" href="about.html">Company</a>
+</div>
+<button type="button" data-waitlist-open class="bg-gradient-to-br from-primary to-primary-container px-6 py-2.5 rounded-xl text-on-primary font-headline text-sm font-bold active:scale-95 transition-transform">
+                Join Waitlist
+            </button>
+</div>
+<div class="bg-gradient-to-b from-[#131B2D] to-transparent h-[1px] w-full absolute bottom-0"></div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero: The Kinetic Vault -->
+<section class="max-w-7xl mx-auto px-6 mb-32 md:mb-48 relative">
+<div class="absolute -top-20 -left-20 w-96 h-96 bg-primary/10 blur-[120px] rounded-full"></div>
+<div class="relative z-10 grid md:grid-cols-12 gap-12 items-end">
+<div class="md:col-span-8">
+<span class="inline-block px-4 py-1.5 rounded-full bg-surface-container-high border border-primary/20 text-primary text-xs font-bold tracking-widest uppercase mb-8">Vision 2025</span>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-headline font-bold leading-[1.05] tracking-tight mb-8">
+                        The Kinetic <br/>
+<span class="text-gradient-primary">Vault.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                        We are building more than a gateway. We are engineering a high-velocity, impenetrable sanctuary for the Nigerian economy—where capital moves at the speed of light with the security of a fortress.
+                    </p>
+</div>
+<div class="md:col-span-4 flex flex-col items-start md:items-end">
+<div class="w-full h-64 md:h-96 rounded-2xl overflow-hidden bg-surface-container-low glass-panel p-1">
+<div class="w-full h-full rounded-xl overflow-hidden relative">
+<img alt="Futuristic digital infrastructure" class="w-full h-full object-cover grayscale opacity-50" data-alt="Abstract glowing geometric nodes and digital connections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZCDbxeIDdk9tJa9dFVHg5dew9wTjRhwkXFDePnbgQVLbVtefGLEZtBUAOB-AfcljgkS5ebCGyPFNpPyWRg4n8Hd1ftBRgdWJnTuEP18y3-8dhW7OeWAad_l79Exa540X19Aat9hQx6OfBBgclmIXtbfdKggc1wy2UPsfcRCsIm95lDyG-9vnRCLbHVbCyQCqoSl7B_ug4ah1Ogw4fRafUjjSxopP0ddfpH2Xwl2wy7K99YOfxJlt01mNechKuBW7MxkjBtqeiows"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Financial Curation (Asymmetric Bento) -->
+<section class="max-w-7xl mx-auto px-6 mb-40">
+<div class="mb-20 max-w-3xl">
+<h2 class="text-3xl md:text-4xl font-headline font-bold mb-6">Financial Curation</h2>
+<p class="text-on-surface-variant text-lg">Infrastructure designed for precision. We don't just process transactions; we curate the flow of value through intelligent routing and institutional-grade stability.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Feature -->
+<div class="md:col-span-2 group relative h-[500px] rounded-2xl bg-surface-container-low overflow-hidden transition-all duration-500 hover:bg-surface-container">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-20 group-hover:opacity-40 transition-opacity">
+<img alt="Data stream visualization" class="w-full h-full object-cover" data-alt="Dynamic glowing lines of blue data flowing upwards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-16U63wKVCjwB0e0pstlVYGAxpJqWFHBuH9OMQN0ZNs9AcJMuZKapxTjy_DbSrytpqPHrGoA2iwBqfyzUgr6mVEkG0znS0N1lUnoZbBbC0dcl-fnumENiy3pcxZSWepxjABB862lG_2s7AK4zVVGvJ4QrUAAXireOChZKUJ8bPI1gPX9DMEj443ltY0I0QVuAhYmCsWSGJzSMalh_QS8hlEFp2iizHrQa-9HOIEIvqbxxaPQaxOKOCOH88A6MwaEhXDPDl5fphpY"/>
+</div>
+<div class="relative h-full p-10 flex flex-col justify-end">
+<div class="mb-6 h-12 w-12 rounded-xl bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="hub">hub</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Unified Settlement Mesh</h3>
+<p class="text-on-surface-variant max-w-md">Bridging the gap between legacy banking rails and modern digital wallets through a single, frictionless execution layer.</p>
+</div>
+</div>
+<!-- Vertical Feature -->
+<div class="group relative h-[500px] rounded-2xl bg-surface-container-low overflow-hidden transition-all duration-500 hover:bg-surface-container p-10 flex flex-col">
+<div class="mb-auto h-12 w-12 rounded-xl bg-secondary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="verified_user">verified_user</span>
+</div>
+<div>
+<h3 class="text-2xl font-headline font-bold mb-4">Atomic Precision</h3>
+<p class="text-on-surface-variant">Real-time verification and zero-latency fraud detection integrated into every byte of the transaction lifecycle.</p>
+</div>
+<div class="mt-8 pt-8 border-t border-white/5">
+<span class="text-3xl font-bold text-secondary">99.99%</span>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mt-1">Uptime SLA</p>
+</div>
+</div>
+<!-- Small Box 1 -->
+<div class="group h-[320px] rounded-2xl bg-surface-container-low p-10 flex flex-col justify-between transition-all duration-500 hover:bg-surface-container">
+<span class="material-symbols-outlined text-tertiary text-4xl" data-icon="token">token</span>
+<div>
+<h4 class="text-xl font-headline font-bold mb-2">Tokenized Assets</h4>
+<p class="text-sm text-on-surface-variant">The future of ownership, managed through the UnioGate ledger.</p>
+</div>
+</div>
+<!-- Small Box 2 -->
+<div class="md:col-span-2 group h-[320px] rounded-2xl bg-gradient-to-br from-primary-container/30 to-surface-container-low p-10 flex items-center gap-10 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5">
+<div class="flex-1">
+<h4 class="text-xl font-headline font-bold mb-4">Institutional Trust</h4>
+<p class="text-on-surface-variant">Built for banks, fintechs, and governments who require nothing less than total reliability and complete transparency.</p>
+</div>
+<div class="hidden md:block w-48 h-48 bg-surface-container-high rounded-xl glass-panel relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary/40 text-8xl" data-icon="account_balance">account_balance</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Global Accessibility (Editorial Style) -->
+<section class="bg-surface-container-low py-32 md:py-48">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center gap-16 md:gap-32">
+<div class="w-full md:w-1/2 order-2 md:order-1">
+<div class="relative">
+<div class="absolute -inset-4 bg-secondary/5 blur-3xl rounded-full"></div>
+<img alt="Global finance map" class="relative rounded-2xl w-full h-auto object-cover grayscale brightness-75 transition-all duration-700 hover:grayscale-0" data-alt="Stylized map of the world with glowing financial hubs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtwD1Vjqc_rlJr9zZJU34-ZuAq-hSye9c6OGRFuvQ4uqF5ywpaoEbxzTKBBSEcLO_RXBedmhB1_sP288G9fJBVblndjOXokduYWBgMcf-xAE07rOMckZEgM8o-6RuwOgTMhRIpoYFZvEoh8kZ0gX6uxTIel7SzFwjIdQn8nR8DgTmcnRkkTuE1RDJfuet_HiaNSJMqRx6Z1DXpmKt1xfkxzQSqGZ8VOsphcxZLnnBTVnU3uh_COJlUaYOK44HDfwgSp4s_gS00Jqc"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 order-1 md:order-2">
+<h2 class="text-4xl md:text-5xl font-headline font-bold mb-8 leading-tight">Global Accessibility.<br/><span class="text-secondary">Local Execution.</span></h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="shrink-0 w-1 rounded-full bg-secondary"></div>
+<div>
+<h4 class="text-xl font-bold mb-2">Borderless by Default</h4>
+<p class="text-on-surface-variant leading-relaxed">Connecting Nigerian businesses to the global market without the traditional friction of cross-border settlements.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="shrink-0 w-1 rounded-full bg-primary"></div>
+<div>
+<h4 class="text-xl font-bold mb-2">Universal API</h4>
+<p class="text-on-surface-variant leading-relaxed">One integration to rule all payment methods—from USSD and bank transfers to international cards and stablecoins.</p>
+</div>
+</div>
+</div>
+<a class="mt-12 flex items-center gap-3 text-secondary font-bold group" href="how-it-works.html">
+                            Explore our Infrastructure
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-6 py-40">
+<div class="relative bg-surface-container rounded-[2rem] p-12 md:p-24 overflow-hidden text-center">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-tertiary/5"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="text-4xl md:text-6xl font-headline font-bold mb-8">Secure the Future of Finance.</h2>
+<p class="text-lg md:text-xl text-on-surface-variant mb-12">Join the elite network of developers and institutions building the next era of unified payments in Africa.</p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<button type="button" data-waitlist-open class="px-10 py-5 bg-primary text-on-primary font-bold rounded-xl text-lg hover:brightness-110 active:scale-95 transition-all">
+                            Get Early Access
+                        </button>
+<button class="px-10 py-5 bg-surface-container-highest border border-primary/20 text-white font-bold rounded-xl text-lg hover:bg-surface-bright active:scale-95 transition-all">
+                            Contact Institutional Sales
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0B1325] w-full pt-20 pb-10 border-t border-white/5">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="col-span-2 md:col-span-1">
+<a href="index.html" class="inline-flex items-center gap-2 text-2xl font-black text-[#B5C4FF] mb-6 font-headline"><img alt="" src="LogoMark%20Blue.svg" width="32" height="32" class="h-8 w-8 shrink-0"/><span>UnioGate</span></a>
+<p class="font-['Sora'] text-sm text-slate-400 max-w-xs leading-relaxed">
+                    Engineering the future of financial infrastructure for the African continent.
+                </p>
+</div>
+<div>
+<h4 class="text-[#B5C4FF] font-bold mb-6 text-sm uppercase tracking-widest">Platform</h4>
+<ul class="space-y-4">
+<li><a class="font-['Sora'] text-sm text-slate-500 hover:text-[#B5C4FF] hover:translate-x-1 transition-transform inline-block" href="how-it-works.html">Infrastructure</a></li>
+<li><a class="font-['Sora'] text-sm text-slate-500 hover:text-[#B5C4FF] hover:translate-x-1 transition-transform inline-block" href="#">Security</a></li>
+<li><a class="font-['Sora'] text-sm text-slate-500 hover:text-[#B5C4FF] hover:translate-x-1 transition-transform inline-block" href="#">APIs</a></li>
+<li><a class="font-['Sora'] text-sm text-slate-500 hover:text-[#B5C4FF] hover:translate-x-1 transition-transform inline-block" href="#">Pricing</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#B5C4FF] font-bold mb-6 text-sm uppercase tracking-widest">Company</h4>
+<ul class="space-y-4">
+<li><a class="font-['Sora'] text-sm text-[#59DBC4] hover:translate-x-1 transition-transform inline-block" href="vision.html">Vision</a></li>
+<li><a class="font-['Sora'] text-sm text-slate-500 hover:text-[#B5C4FF] hover:translate-x-1 transition-transform inline-block" href="careers.html">Careers</a></li>
+<li><a class="font-['Sora'] text-sm text-slate-500 hover:text-[#B5C4FF] hover:translate-x-1 transition-transform inline-block" href="press.html">Press</a></li>
+<li><a class="font-['Sora'] text-sm text-slate-500 hover:text-[#B5C4FF] hover:translate-x-1 transition-transform inline-block" href="#">Legal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#B5C4FF] font-bold mb-6 text-sm uppercase tracking-widest">Connect</h4>
+<ul class="space-y-4">
+<li><a class="font-['Sora'] text-sm text-slate-500 hover:text-[#B5C4FF] hover:translate-x-1 transition-transform inline-block" href="#">Twitter/X</a></li>
+<li><a class="font-['Sora'] text-sm text-slate-500 hover:text-[#B5C4FF] hover:translate-x-1 transition-transform inline-block" href="#">LinkedIn</a></li>
+<li><a class="font-['Sora'] text-sm text-slate-500 hover:text-[#B5C4FF] hover:translate-x-1 transition-transform inline-block" href="#">GitHub</a></li>
+<li><a class="font-['Sora'] text-sm text-slate-500 hover:text-[#B5C4FF] hover:translate-x-1 transition-transform inline-block" href="#">Discord</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-6 items-center">
+<span class="font-['Sora'] text-sm text-slate-400">© 2026 UnioGate Infrastructure. All rights reserved.</span>
+<div class="flex flex-wrap gap-6">
+<a class="text-xs text-slate-500 hover:text-white transition-colors" href="privacy-policy.html">Privacy Policy</a>
+<a class="text-xs text-slate-500 hover:text-white transition-colors" href="terms-of-service.html">Terms of Service</a>
+<a class="text-xs text-slate-500 hover:text-white transition-colors" href="security.html">Security</a>
+<a class="text-xs text-slate-500 hover:text-white transition-colors" href="cookie-settings.html">Cookie Settings</a>
+</div>
+</div>
+</footer>
+<script src="assets/waitlist-modal.js" defer></script>
+<script src="assets/cookie-consent.js" defer></script>
+<script src="assets/footer-links.js" defer></script>
+</body></html>
+

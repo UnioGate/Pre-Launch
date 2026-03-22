@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210.64 50.24">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-3 {
+        font-family: PlusJakartaSans-SemiBold, 'Plus Jakarta Sans';
+        font-size: 38.39px;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <path class="cls-2" d="M36.37,14.35l.02-4.98S27.38,9.53,27.34,0l-5.08.03s-.38,13.54,14.11,14.32Z"/>
+        <path class="cls-2" d="M14.56,4.93l3.55-3.49s6.17,6.56,13.02-.07l3.52,3.66s-9.42,9.73-20.1-.09Z"/>
+      </g>
+      <g>
+        <path class="cls-2" d="M40.07,29.48l4.32-2.48s-4.64-7.72,3.6-12.52l-2.57-4.38s-11.91,6.44-5.35,19.38Z"/>
+        <path class="cls-2" d="M37.32,5.88l4.8,1.33s-2.59,8.62,6.58,11.24l-1.41,4.88s-13.13-3.3-9.97-17.45Z"/>
+      </g>
+      <g>
+        <path class="cls-2" d="M28.82,40.24l4.3,2.51s4.36-7.88,12.64-3.14l2.51-4.42s-11.53-7.1-19.45,5.06Z"/>
+        <path class="cls-2" d="M47.88,26.07l1.25,4.82s-8.76,2.07-6.45,11.32l-4.93,1.22s-3.71-13.02,10.13-17.36Z"/>
+      </g>
+      <g>
+        <path class="cls-2" d="M13.87,35.88l-.02,4.98s9-.16,9.04,9.37l5.08-.03s.38-13.54-14.11-14.32Z"/>
+        <path class="cls-2" d="M35.67,45.3l-3.55,3.49s-6.17-6.56-13.02.07l-3.52-3.66s9.42-9.73,20.1.09Z"/>
+      </g>
+      <g>
+        <path class="cls-2" d="M10.17,20.76l-4.32,2.48s4.64,7.72-3.6,12.52l2.57,4.38s11.91-6.44,5.35-19.38Z"/>
+        <path class="cls-2" d="M12.92,44.35l-4.8-1.33s2.59-8.62-6.58-11.24l1.41-4.88s13.13,3.3,9.97,17.45Z"/>
+      </g>
+      <g>
+        <path class="cls-2" d="M21.42,9.99l-4.3-2.51s-4.36,7.88-12.64,3.14l-2.51,4.42s11.53,7.1,19.45-5.06Z"/>
+        <path class="cls-2" d="M2.36,24.17l-1.25-4.82s8.76-2.07,6.45-11.32l4.93-1.22s3.71,13.02-10.13,17.36Z"/>
+      </g>
+    </g>
+    <text class="cls-3" transform="translate(54.78 39.79)"><tspan class="cls-4" x="0" y="0">UnioG</tspan><tspan class="cls-1" x="101.12" y="0">at</tspan><tspan class="cls-4" x="132.33" y="0">e</tspan></text>
+  </g>
+</svg>

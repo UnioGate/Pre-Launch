@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>How It Works | UnioGate</title>
+<link rel="icon" href="LogoMark%20Blue.svg" type="image/svg+xml"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Sora:wght@300;400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ffb4ab",
+              "on-secondary-fixed-variant": "#005045",
+              "secondary-container": "#00a993",
+              "tertiary-fixed-dim": "#c9bfff",
+              "surface-dim": "#0b1325",
+              "surface-container-lowest": "#060e1f",
+              "on-error-container": "#ffdad6",
+              "surface-tint": "#b5c4ff",
+              "secondary": "#59dbc4",
+              "on-secondary-fixed": "#00201b",
+              "primary": "#b5c4ff",
+              "on-primary-container": "#96acfc",
+              "outline-variant": "#444651",
+              "tertiary-fixed": "#e5deff",
+              "inverse-primary": "#435aa4",
+              "secondary-fixed-dim": "#59dbc4",
+              "on-surface": "#dbe2fb",
+              "surface-container-high": "#222a3d",
+              "on-tertiary-fixed": "#1a0063",
+              "on-tertiary-fixed-variant": "#4403d8",
+              "on-tertiary": "#2e009c",
+              "on-primary-fixed-variant": "#2a428a",
+              "on-primary-fixed": "#00164d",
+              "surface-container-low": "#131b2d",
+              "on-surface-variant": "#c5c6d2",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              "outline": "#8f909c",
+              "on-secondary-container": "#00352e",
+              "background": "#0b1325",
+              "primary-container": "#253e86",
+              "primary-fixed-dim": "#b5c4ff",
+              "surface-bright": "#31394c",
+              "on-primary": "#0c2a73",
+              "inverse-on-surface": "#283043",
+              "secondary-fixed": "#78f8df",
+              "primary-fixed": "#dce1ff",
+              "on-tertiary-container": "#b1a4ff",
+              "on-secondary": "#00382f",
+              "on-background": "#dbe2fb",
+              "inverse-surface": "#dbe2fb",
+              "tertiary-container": "#4000ce",
+              "surface-variant": "#2d3448",
+              "surface-container-highest": "#2d3448",
+              "surface-container": "#171f32",
+              "tertiary": "#c9bfff",
+              "surface": "#0b1325"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Sora"],
+              "label": ["Sora"],
+              "jakarta": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #b5c4ff 0%, #253e86 100%);
+        }
+        .glass-panel {
+            background: rgba(45, 52, 72, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 selection:text-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0B1325]/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(37,62,134,0.08)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<a href="index.html" class="flex items-center gap-2 text-xl font-bold tracking-tighter text-[#B5C4FF] font-headline"><img alt="" src="LogoMark%20Blue.svg" width="36" height="36" class="h-9 w-9 shrink-0"/><span>UnioGate</span></a>
+<div class="hidden md:flex items-center gap-8 font-jakarta text-sm font-semibold tracking-wide">
+<a class="text-slate-400 hover:text-white transition-colors" href="index.html">Platform</a>
+<a class="text-[#B5C4FF] font-bold border-b-2 border-[#B5C4FF] pb-1" href="how-it-works.html">Infrastructure</a>
+<a class="text-slate-400 hover:text-white transition-colors" href="connect.html">Developers</a>
+<a class="text-slate-400 hover:text-white transition-colors" href="about.html">Company</a>
+</div>
+<button type="button" data-waitlist-open class="kinetic-gradient text-on-primary px-6 py-2.5 rounded-xl font-jakarta font-bold text-sm active:scale-95 transition-transform">
+                Join Waitlist
+            </button>
+</div>
+<div class="bg-gradient-to-b from-[#131B2D] to-transparent h-[1px] w-full absolute bottom-0"></div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 mb-32">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container/30 border border-primary/20 text-primary text-xs font-bold tracking-widest uppercase mb-8">
+                        Technical Architecture
+                    </span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter mb-8 leading-[1.1]">
+                        The Kinetic <br/><span class="text-primary">Vault</span> Protocol.
+                    </h1>
+<p class="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-xl font-light">
+                        Engineered for high-velocity global finance. A deep dive into the unified infrastructure that collapses the distance between legacy fiat and digital assets.
+                    </p>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/10 blur-3xl rounded-full opacity-50 group-hover:opacity-100 transition duration-1000"></div>
+<div class="relative aspect-square glass-panel rounded-3xl overflow-hidden border border-outline-variant/20">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-tertiary/10"></div>
+<img class="w-full h-full object-cover mix-blend-overlay opacity-60" data-alt="Abstract 3D digital infrastructure visualization with neon lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvGAV0Ogi4XnqUsdxI9_1nb1-Ep_iHP7zVcx7cNq2YFlhrHbqBnEftbY0827Ceo549wU-onQkY6qfrnyH-bAdLhykvwttwSnKyVlSErFY9-01shkHHhskerHw4z5AwqKxJv-GXNKSWBZfaG0wpfOgEI3XqIGwkc_7WrxSpO8rNjhWNkbI5n3lNlom5EgAQxfdzP7aDuwKs34vf1X67W4nC9pTvwn7yk6pHf6GIFlPvAYdWiOpL-dgx0rVVEqH8PWSfVPQaIoEEl5U"/>
+<div class="absolute bottom-10 left-10 p-8 glass-panel border border-white/5 rounded-2xl max-w-xs">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="font-bold text-sm tracking-widest uppercase">Encryption Tier-1</span>
+</div>
+<div class="space-y-2">
+<div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+<div class="h-full w-2/3 bg-secondary"></div>
+</div>
+<div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+<div class="h-full w-4/5 bg-primary"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Bento Grid -->
+<section class="max-w-7xl mx-auto px-6 mb-40">
+<h2 class="font-headline text-3xl font-semibold mb-16 flex items-center gap-4">
+                The Protocol Lifecycle <span class="h-px flex-grow bg-gradient-to-r from-outline-variant/30 to-transparent"></span>
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Step 1: Integration -->
+<div class="md:col-span-7 group">
+<div class="h-full glass-panel rounded-3xl border border-outline-variant/15 p-10 hover:bg-surface-container-high transition-all duration-500 overflow-hidden relative">
+<div class="absolute top-0 right-0 p-10 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="text-9xl font-black font-headline">01</span>
+</div>
+<div class="relative z-10">
+<div class="w-14 h-14 rounded-2xl bg-primary-container/40 flex items-center justify-center mb-8 border border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-6">Omni-Channel Integration</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-lg">
+                                Access our entire global infrastructure through a single, idempotent API. Whether it's high-frequency trading or retail checkout, our SDKs bridge the gap in under 200ms.
+                            </p>
+<div class="bg-surface-container-lowest rounded-xl p-6 font-mono text-sm border border-outline-variant/10">
+<div class="flex gap-2 mb-2">
+<span class="text-primary">POST</span>
+<span class="text-on-surface-variant">/v1/vault/initialize</span>
+</div>
+<div class="text-secondary/80">
+                                    {<br/>
+                                      "protocol": "kinetic_vault",<br/>
+                                      "assets": ["USD", "ETH", "USDC"],<br/>
+                                      "settlement": "instant"<br/>
+                                    }
+                                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 2: Unified Interface -->
+<div class="md:col-span-5">
+<div class="h-full bg-surface-container-low rounded-3xl border border-outline-variant/15 p-10 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-secondary-container/20 flex items-center justify-center mb-8 border border-secondary/20">
+<span class="material-symbols-outlined text-secondary text-3xl">account_balance_wallet</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-6">Unified Ledger</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                                Our abstraction layer treats crypto and fiat as equal primitives. Accept payments in 120+ fiat currencies and 20+ major blockchains through one interface.
+                            </p>
+</div>
+<div class="mt-12 flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-full bg-surface-container-highest text-xs font-bold tracking-widest text-primary uppercase border border-primary/10">Stablecoins</span>
+<span class="px-4 py-2 rounded-full bg-surface-container-highest text-xs font-bold tracking-widest text-secondary uppercase border border-secondary/10">SWIFT/SEPA</span>
+<span class="px-4 py-2 rounded-full bg-surface-container-highest text-xs font-bold tracking-widest text-tertiary uppercase border border-tertiary/10">Layer 2s</span>
+</div>
+</div>
+</div>
+<!-- Step 3: Instant Settlement -->
+<div class="md:col-span-12">
+<div class="glass-panel rounded-3xl border border-outline-variant/15 p-10 flex flex-col md:flex-row items-center gap-12 overflow-hidden relative">
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-tertiary/5 rounded-full blur-3xl"></div>
+<div class="md:w-1/2 relative z-10">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-container/20 flex items-center justify-center mb-8 border border-tertiary/20">
+<span class="material-symbols-outlined text-tertiary text-3xl">bolt</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-6">Instant Settlement Engine</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+                                Traditional finance takes 3 days. We take 3 seconds. UnioGate liquidity pools act as a buffer, ensuring your business receives capital the moment a transaction is verified on the network.
+                            </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="font-jakarta font-semibold">Real-time fraud screening</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="font-jakarta font-semibold">Zero chargeback risk for crypto</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="font-jakarta font-semibold">Automated tax reconciliation</span>
+</li>
+</ul>
+</div>
+<div class="md:w-1/2 w-full aspect-video rounded-2xl bg-surface-container-highest overflow-hidden border border-white/5 relative">
+<img class="w-full h-full object-cover opacity-40" data-alt="Digital representation of high speed data transmission" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4aZHTK8Xbh8j1-TFoIByOw4g24LJCx30zlIgza07TE3rD9sahfGPDdQoAd6wbVkBJBhLccZKHh2TO17otQFYOsMWACpRqXIVL6BuPxqdBi-pMtuX8ZIo7TWV-hen1pLq-Q7IxoxkxqnXd821jOVWcvtBAYvaryuDHlrPyUAgA4cuwIO1g2HCjj9wfl8ipcQEEYhb2kHgpW_TLLA3x6duoddTg67EkgDBYMCuNzbP4ED0WNA22hZUInekBNj-9aLHJm1ZD1AVmOYQ"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="p-6 glass-panel border border-white/10 rounded-2xl text-center">
+<div class="text-4xl font-black font-headline text-secondary mb-1">0.03s</div>
+<div class="text-[10px] uppercase font-bold tracking-[0.2em] text-on-surface-variant">Avg. Verification</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Deep Dive (Asymmetric Layout) -->
+<section class="max-w-7xl mx-auto px-6 mb-40">
+<div class="bg-surface-container-low rounded-[3rem] p-12 md:p-24 relative overflow-hidden">
+<div class="grid lg:grid-cols-2 gap-20 relative z-10">
+<div>
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-10 leading-tight">
+                            Engineered for <br/>Impenetrable Security.
+                        </h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">hub</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold mb-3">Multi-MPC Custody</h4>
+<p class="text-on-surface-variant leading-relaxed">Multi-Party Computation ensures private keys never exist in full on any single device, eliminating the single point of failure inherent in traditional hardware wallets.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">shield_lock</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold mb-3">T+0 Liquidity Guard</h4>
+<p class="text-on-surface-variant leading-relaxed">Our smart-contract driven treasury management ensures that liquidity is always available across 40+ trading pairs, preventing settlement delays during peak volatility.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-3xl overflow-hidden border border-outline-variant/20 shadow-2xl rotate-3 translate-x-4">
+<img class="w-full h-full object-cover" data-alt="Modern server rack with blue glowing lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVd31nTBLSBZes1TPZFac3Vic3kRqtq-MFVHIBnDUkP8D63XgYuoI29HiTCkk8nMdgPPNpe4SfRhabBV5Fq7Q8biy8uceYOd7JlwH-ZFzhVPNocLiNkyKxiPMj-vWOpnuwnnYvVcPK4tMYBxrKII-es8j17qO1iB8v-rKJoW-3ChLOmFhNVtwfj6iqB0dn2CHpvPTmR4D6wVTW6MaOYS1txU7-oiJSLTKvaar1FGjSrJ-FHw2l-mLndwzi0d25-GAFO_RzkKoY6m0"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-6 mb-40 text-center">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl md:text-6xl font-bold mb-8 tracking-tighter">Ready to evolve?</h2>
+<p class="text-on-surface-variant text-xl mb-12">
+                    Join the top tier of fintech innovators scaling with UnioGate infrastructure.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="kinetic-gradient px-10 py-4 rounded-xl font-jakarta font-bold text-lg text-on-primary w-full sm:w-auto shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+                        Explore Documentation
+                    </button>
+<button class="px-10 py-4 rounded-xl font-jakarta font-bold text-lg border border-primary/30 hover:bg-primary/5 transition-colors w-full sm:w-auto">
+                        Talk to Engineering
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 border-t border-white/5 bg-[#0B1325]">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="col-span-2 md:col-span-1">
+<a href="index.html" class="inline-flex items-center gap-2 text-2xl font-black text-[#B5C4FF] mb-6 font-headline"><img alt="" src="LogoMark%20Blue.svg" width="32" height="32" class="h-8 w-8 shrink-0"/><span>UnioGate</span></a>
+<p class="font-body text-sm text-slate-400 leading-relaxed mb-6">
+                    Next-generation payment rail for the unified economy.
+                </p>
+</div>
+<div>
+<h5 class="font-jakarta font-bold text-[#B5C4FF] mb-6 uppercase tracking-widest text-xs">Personal</h5>
+<ul class="space-y-4">
+<li><a class="font-body text-sm text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="#">Wallet</a></li>
+<li><a class="font-body text-sm text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="#">Payments</a></li>
+<li><a class="font-body text-sm text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="#">Security</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-jakarta font-bold text-[#B5C4FF] mb-6 uppercase tracking-widest text-xs">Business</h5>
+<ul class="space-y-4">
+<li><a class="font-body text-sm text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="#">Gateway</a></li>
+<li><a class="font-body text-sm text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="#">Treasury</a></li>
+<li><a class="font-body text-sm text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="#">API Reference</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-jakarta font-bold text-[#B5C4FF] mb-6 uppercase tracking-widest text-xs">Support</h5>
+<ul class="space-y-4">
+<li><a class="font-body text-sm text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="#">Help Center</a></li>
+<li><a class="font-body text-sm text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="#">Status</a></li>
+<li><a class="font-body text-sm text-slate-500 hover:text-[#B5C4FF] transition-all hover:translate-x-1 inline-block" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between gap-6">
+<p class="font-body text-sm text-slate-400">© 2026 UnioGate Infrastructure. All rights reserved.</p>
+<div class="flex flex-wrap gap-6">
+<a class="text-slate-500 hover:text-[#B5C4FF] text-sm" href="privacy-policy.html">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#B5C4FF] text-sm" href="terms-of-service.html">Terms of Service</a>
+<a class="text-slate-500 hover:text-[#B5C4FF] text-sm" href="security.html">Security</a>
+<a class="text-slate-500 hover:text-[#B5C4FF] text-sm" href="cookie-settings.html">Cookies</a>
+</div>
+</div>
+</footer>
+<script src="assets/waitlist-modal.js" defer></script>
+<script src="assets/cookie-consent.js" defer></script>
+<script src="assets/footer-links.js" defer></script>
+</body></html>
+
