@@ -38,14 +38,54 @@
       '<div class="space-y-2">' +
       '<label class="text-[11px] font-bold uppercase tracking-widest text-on-surface-variant ml-1" for="ug-waitlist-business">Business Type</label>' +
       '<div class="relative group">' +
-      '<select class="w-full bg-surface-container-lowest border-none rounded-xl px-6 py-4 text-on-surface focus:ring-0 focus:bg-surface-container transition-all appearance-none cursor-pointer" id="ug-waitlist-business" name="business">' +
-      '<option value="" disabled selected>Select industry</option>' +
-      '<option value="fintech">Fintech Startup</option>' +
-      '<option value="enterprise">Global Enterprise</option>' +
-      '<option value="bank">Traditional Banking</option>' +
-      '<option value="web3">Web3 Infrastructure</option></select>' +
-      '<div class="absolute bottom-0 left-0 w-0 h-[2px] bg-secondary group-focus-within:w-full transition-all duration-300"></div>' +
-      '<span class="material-symbols-outlined absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-outline">expand_more</span></div></div>' +
+      '<input class="w-full bg-surface-container-lowest border-none rounded-xl px-6 py-4 text-on-surface placeholder:text-outline/50 focus:ring-0 focus:bg-surface-container transition-all" id="ug-waitlist-business" name="business" placeholder="Type or choose your business type" type="text" list="ug-waitlist-business-options" autocomplete="organization-title" required/>' +
+      '<datalist id="ug-waitlist-business-options">' +
+      '<option value="Fintech Startup"></option>' +
+      '<option value="Digital Bank"></option>' +
+      '<option value="Commercial Bank"></option>' +
+      '<option value="Microfinance Bank"></option>' +
+      '<option value="Credit Union"></option>' +
+      '<option value="Payment Processor"></option>' +
+      '<option value="Payment Gateway"></option>' +
+      '<option value="POS Provider"></option>' +
+      '<option value="Merchant Aggregator"></option>' +
+      '<option value="E-commerce Brand"></option>' +
+      '<option value="Online Marketplace"></option>' +
+      '<option value="Retail Business"></option>' +
+      '<option value="Wholesale Distributor"></option>' +
+      '<option value="Logistics Company"></option>' +
+      '<option value="Mobility / Transport"></option>' +
+      '<option value="Travel & Hospitality"></option>' +
+      '<option value="Healthtech Company"></option>' +
+      '<option value="Edtech Company"></option>' +
+      '<option value="SaaS Company"></option>' +
+      '<option value="Enterprise Software"></option>' +
+      '<option value="Telecommunications"></option>' +
+      '<option value="Media & Entertainment"></option>' +
+      '<option value="Gaming Platform"></option>' +
+      '<option value="Creator Economy"></option>' +
+      '<option value="Crypto Exchange"></option>' +
+      '<option value="Web3 Infrastructure"></option>' +
+      '<option value="Stablecoin Business"></option>' +
+      '<option value="Blockchain Protocol"></option>' +
+      '<option value="Investment Platform"></option>' +
+      '<option value="Asset Management"></option>' +
+      '<option value="Insurance Provider"></option>' +
+      '<option value="Lending Platform"></option>' +
+      '<option value="Accounting / Finance Ops"></option>' +
+      '<option value="Treasury Management"></option>' +
+      '<option value="NGO / Nonprofit"></option>' +
+      '<option value="Government / Public Sector"></option>' +
+      '<option value="Import / Export Business"></option>' +
+      '<option value="Manufacturing Company"></option>' +
+      '<option value="Energy / Utilities"></option>' +
+      '<option value="Real Estate"></option>' +
+      '<option value="Professional Services"></option>' +
+      '<option value="Consulting Firm"></option>' +
+      '<option value="Developer / Agency"></option>' +
+      '<option value="Other"></option>' +
+      '</datalist>' +
+      '<div class="absolute bottom-0 left-0 w-0 h-[2px] bg-secondary group-focus-within:w-full transition-all duration-300"></div></div></div>' +
       '<div class="pt-4">' +
       '<button class="w-full bg-secondary text-on-secondary-container h-14 rounded-xl font-headline font-bold text-lg hover:brightness-110 active:scale-[0.98] transition-all shadow-[0_0_24px_rgba(89,219,196,0.2)]" type="submit">Join Waitlist</button>' +
       '<p class="mt-6 text-[10px] text-center text-outline leading-normal px-4">By joining, you agree to receive early access updates. We value your data as much as our encryption keys.</p></div></form></div></div>';
