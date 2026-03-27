@@ -179,17 +179,37 @@
 <h2 class="font-headline text-4xl font-bold mb-4">Open Positions</h2>
 <p class="text-on-surface-variant">Find your place in the future of infrastructure.</p>
 </div>
-<div class="flex gap-4 overflow-x-auto pb-2">
-<button class="whitespace-nowrap px-6 py-2 rounded-full bg-primary text-on-primary font-bold text-sm">All Roles</button>
-<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:text-white transition-colors font-bold text-sm">Engineering</button>
-<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:text-white transition-colors font-bold text-sm">Design</button>
-<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:text-white transition-colors font-bold text-sm">Product</button>
+<div class="flex gap-4 overflow-x-auto pb-2" data-role-filters>
+<button type="button" data-role-filter="all" aria-pressed="true" class="whitespace-nowrap px-6 py-2 rounded-full bg-primary text-on-primary font-bold text-sm">All Roles</button>
+<button type="button" data-role-filter="engineering" aria-pressed="false" class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:text-white transition-colors font-bold text-sm">Engineering</button>
+<button type="button" data-role-filter="design" aria-pressed="false" class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:text-white transition-colors font-bold text-sm">Design</button>
+<button type="button" data-role-filter="product" aria-pressed="false" class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:text-white transition-colors font-bold text-sm">Product</button>
 </div>
 </div>
 <!-- Job List -->
-<div class="space-y-4">
-<!-- Role Item 1 -->
-<div class="group bg-surface-container rounded-xl p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-high transition-all border border-transparent hover:border-primary/20">
+<div class="space-y-4" data-role-list>
+<!-- Role Item 0 -->
+<div class="group bg-surface-container rounded-xl p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-high transition-all border border-transparent hover:border-primary/20" data-role-card data-role-category="engineering">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3 mb-1">
+<h3 class="font-headline text-xl font-bold text-white">Director of Content & Marketing</h3>
+<span class="px-3 py-1 bg-tertiary-container/30 text-tertiary rounded-full text-[10px] font-black uppercase tracking-widest border border-tertiary/20">Remote</span>
+</div>
+<p class="text-on-surface-variant text-sm">Marketing • Social Media Management, Content, Community</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden sm:block text-right">
+<span class="block text-xs text-slate-500 uppercase font-bold tracking-widest">Comp Range</span>
+<span class="text-secondary font-bold">-</span>
+</div>
+<button class="p-3 rounded-lg bg-surface-container-highest text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+
+    <!-- Role Item 1 -->
+<!-- <div class="group bg-surface-container rounded-xl p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-high transition-all border border-transparent hover:border-primary/20" data-role-card data-role-category="engineering">
 <div class="flex flex-col gap-1">
 <div class="flex items-center gap-3 mb-1">
 <h3 class="font-headline text-xl font-bold text-white">Senior Protocol Engineer</h3>
@@ -206,9 +226,10 @@
 <span class="material-symbols-outlined">arrow_forward</span>
 </button>
 </div>
-</div>
+</div> -->
+
 <!-- Role Item 2 -->
-<div class="group bg-surface-container rounded-xl p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-high transition-all border border-transparent hover:border-primary/20">
+<!-- <div class="group bg-surface-container rounded-xl p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-high transition-all border border-transparent hover:border-primary/20" data-role-card data-role-category="design">
 <div class="flex flex-col gap-1">
 <div class="flex items-center gap-3 mb-1">
 <h3 class="font-headline text-xl font-bold text-white">Product Designer (Design Systems)</h3>
@@ -225,13 +246,14 @@
 <span class="material-symbols-outlined">arrow_forward</span>
 </button>
 </div>
-</div>
+</div> -->
+
 <!-- Role Item 3 -->
-<div class="group bg-surface-container rounded-xl p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-high transition-all border border-transparent hover:border-primary/20">
+<!-- <div class="group bg-surface-container rounded-xl p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-high transition-all border border-transparent hover:border-primary/20" data-role-card data-role-category="engineering">
 <div class="flex flex-col gap-1">
 <div class="flex items-center gap-3 mb-1">
 <h3 class="font-headline text-xl font-bold text-white">Fullstack Security Engineer</h3>
-<span class="px-3 py-1 bg-tertiary-container/30 text-tertiary rounded-full text-[10px] font-black uppercase tracking-widest border border-tertiary/20">San Francisco / Remote</span>
+<span class="px-3 py-1 bg-tertiary-container/30 text-tertiary rounded-full text-[10px] font-black uppercase tracking-widest border border-tertiary/20">Nigeria / Remote</span>
 </div>
 <p class="text-on-surface-variant text-sm">Engineering • Go, React, Zero-Knowledge Proofs</p>
 </div>
@@ -244,8 +266,27 @@
 <span class="material-symbols-outlined">arrow_forward</span>
 </button>
 </div>
+</div> -->
+<!-- Role Item 4 -->
+<!-- <div class="group bg-surface-container rounded-xl p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-high transition-all border border-transparent hover:border-primary/20" data-role-card data-role-category="product">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3 mb-1">
+<h3 class="font-headline text-xl font-bold text-white">Senior Product Manager, Platform</h3>
+<span class="px-3 py-1 bg-secondary-container/20 text-secondary rounded-full text-[10px] font-black uppercase tracking-widest border border-secondary/20">Remote</span>
+</div>
+<p class="text-on-surface-variant text-sm">Product - Platform Strategy, API Roadmaps, B2B Infrastructure</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden sm:block text-right">
+<span class="block text-xs text-slate-500 uppercase font-bold tracking-widest">Comp Range</span>
+<span class="text-secondary font-bold">$155k - $210k</span>
+</div>
+<button class="p-3 rounded-lg bg-surface-container-highest text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
 </div>
 </div>
+</div> -->
 <div class="mt-12 text-center">
 <p class="text-on-surface-variant mb-6">Don't see a role that fits? We're always looking for exceptional talent.</p>
 <a class="text-primary font-bold border-b-2 border-primary/30 hover:border-primary transition-all pb-1" href="mailto:careers@uniogate.com">Send a speculative application</a>
@@ -316,6 +357,7 @@
 </footer>
 <script src="assets/waitlist-modal.js" defer></script>
 <script src="assets/waitlist-submit-handler.js" defer></script>
+<script src="assets/careers-filters.js" defer></script>
 <script src="assets/cookie-consent.js" defer></script>
 <script src="assets/footer-links.js" defer></script>
 </body></html>
